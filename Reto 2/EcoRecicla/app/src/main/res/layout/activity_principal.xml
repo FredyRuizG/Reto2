@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="26dp"
+        android:text="EcoRecicla"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageHeader"
+        app:layout_constraintVertical_bias="0.423" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTopTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a EcoRecicla, la app que facilita el reciclaje"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Únete a nuestra comunidad comprometida para marcar la diferencia en el medioambiente. Aprende dónde y cómo reciclar correctamente para reducir desperdicios. Rastrea tu impacto positivo a través de nuestro contador de reciclaje único. ¡Ganar insignias y competir en el tablero de posiciones te mantendrá motivado!"
+            android:textSize="12dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEstadistica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#74b45a"
+                android:text="Estadística"
+                app:icon="@drawable/estadistica" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#74b45a"
+                android:layout_weight="1"
+                android:text="Categorias"
+                app:icon="@drawable/categorias" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConsejo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#74b45a"
+                android:text="Consejos"
+                app:icon="@drawable/consejos" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

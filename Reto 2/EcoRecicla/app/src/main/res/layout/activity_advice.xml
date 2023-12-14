@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Advice">
+
+    <!-- Encabezado con imagen -->
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Contenedor principal -->
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="26dp"
+        android:text="EcoRecicla"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="378dp"
+        android:layout_height="640dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageHeader">
+
+        <!-- Título de la aplicación -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Consejos"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Sección de Consejos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/consejos2" />
+        </LinearLayout>
+
+        <!-- Espaciador -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <!-- Texto de Consejos -->
+        <TextView
+            android:id="@+id/textConsejos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí van los consejos"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Barra inferior con botón de retroceso -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Espaciador -->
+
+        <Button
+            android:id="@+id/botonRetroceso4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Ir al inicio"
+            android:backgroundTint="#74b45a"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
